@@ -1,0 +1,143 @@
+ @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+
+ :root{
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+ }
+
+ body{
+  background-color: var(--Very-Dark-Blue);
+  font-family: 'Overpass', sans-serif;
+ }
+
+ .hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ }
+
+ .card, .next-card{
+  background-color: var(--Dark-Blue);
+  margin-inline: 5%;
+  max-width: 350px;
+  padding: 3%;
+  border-radius: 10px;
+  color: var(--White);
+ }
+
+ .card-img{
+  height: 25px;
+  background-color: var(--Very-Dark-Blue);
+  padding: 2%;
+  border-radius: 50%;
+ }
+
+ .card h1{
+  font-size: 25px;
+  padding-block: 10px;
+ }
+
+ .card p,
+ .next-card p{
+  padding-block: 10px;
+  opacity: 0.5;
+ }
+
+ .numbers {
+  padding-block: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--White);
+ }
+
+ .rating-btn{
+  background-color: var(--Very-Dark-Blue);
+  height: 40px;
+  width: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  color: var(--Light-Grey);
+ }
+
+ .rating-btn:hover{
+  background-color: var(--Orange);
+  color: var(--White);
+  opacity: 1;
+  cursor: pointer;
+ }
+
+ .rating-btn:focus{
+  background-color: var(--Light-Grey);
+  color: var(--White);
+ }
+
+ .submit-btn{
+  display: block;
+  background-color: var(--Orange);
+  color: var(--White);
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 12px 30px;
+  margin-block: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+ }
+
+ .submit-btn:hover{
+  background-color: var(--White);
+  color: var(--Orange);
+  cursor: pointer;
+ }
+ 
+.next-card{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-card img{
+  background-color: transparent;
+}
+
+.span{
+  color: var(--Orange);
+   background-color: var(--Light-Grey);
+   border-radius: 13px;
+   padding: 5px 7px 2px;
+   margin: 20px 0;
+}
+
+.next-card h2{
+  margin: 5px 0 5px;
+}
+
+.hidden-card{
+  display: none;
+}
+
+ @media only screen and (min-width: 1400px) {
+  .card
+  .next-card{
+    max-width: 420px;
+    padding: 2%;
+  }
+ }
